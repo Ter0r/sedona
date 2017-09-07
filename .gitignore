@@ -5,7 +5,5 @@
 *.pdf
 *.psd
 *.sublime*
-*.json
-gulpfile.js
 node_modules/
 Thumbs.db

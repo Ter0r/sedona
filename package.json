@@ -1,0 +1,32 @@
+{
+  "name": "114667-sedona",
+  "version": "1.0.0",
+  "description": "* Студент: [Ольга Коваль](https://up.htmlacademy.ru/htmlcss/18/user/114667).\r * Наставник: `Неизвестно`.",
+  "main": "index.js",
+  "scripts": {
+     "test": "editorconfig-cli",
+     "start": "gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zateya/114667-sedona.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zateya/114667-sedona/issues"
+  },
+  "homepage": "https://github.com/zateya/114667-sedona/index.html",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
