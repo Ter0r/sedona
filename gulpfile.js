@@ -13,5 +13,5 @@ gulp.task("serve", function() {
   gulp.watch("css/**/*.css".on("change", server.reload);
   gulp.watch("js/**/*.js".on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
-  gulp.watch("img/**/*.{jpg,svg,png}".on("change", server.reload);
+  gulp.watch("img/**/*.{jpg,svg,png}").on("change", server.reload);
 });
