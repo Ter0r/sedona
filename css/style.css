@@ -283,10 +283,8 @@ img {
 }
 
 .reasons {
-  position: relative;
   padding: 47px 0 60px;
   background-color: #f2f2f2;
-  z-index: 2;
 }
 
 .reasons__list {
@@ -318,6 +316,10 @@ img {
 
 .reasons__item-text {
   margin: 21px 0 0;
+}
+
+.search {
+  overflow: hidden;
 }
 
 .search__info {
@@ -446,12 +448,12 @@ img {
 @keyframes formhide {
   0% {
     transform: translateY(0);
-
   }
 
   100% {
     transform: translateY(-100%);
-    opacity: 0;
+    box-shadow: none;
+    transform-origin: top;
   }
 }
 
