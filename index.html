@@ -34,123 +34,123 @@
         <section class="showcase">
           <img class="showcase__img" src="img/welcome.png" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
         </section>
+        <section class="about">
+          <div class="about__info">
+            <h1 class="about__title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h1>
+            <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
+        </section>
+        <section class="reason  reason--first">
+          <div class="reason__info">
+            <h2 class="reason__title">Настоящий городок</h2>
+            <span class="reason__number">— №1 —</span>
+            <p class="reason__text">Седона — не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
+          </div>
+          <div class="reason__img  reason__img--first">
+            <img src="img/sedona-photo1.jpg" width="800" height="401" alt="Седона">
+          </div>
+        </section>
+        <section class="features">
+          <h2 class="visually-hidden">Особенности Седоны</h2>
+          <ul class="features__list">
+            <li class="features__item  features__item--house">
+              <h3 class="features__item-title">Жилье</h3>
+              <p class="features__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features__item  features__item--food">
+              <h3 class="features__item-title">Еда</h3>
+              <p class="features__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="features__item  features__item--souvenirs">
+              <h3 class="features__item-title">Сувениры</h3>
+              <p class="features__item-text">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </section>
+        <section class="reason  reason--second">
+          <div class="reason__img  reason__img--second">
+            <img src="img/sedona-photo2.jpg" width="800" height="400" alt="Седона">
+          </div>
+          <div class="reason__info">
+            <h2 class="reason__title">Там есть Мост&nbsp;дьявола</h2>
+            <span class="reason__number">— №2 —</span>
+            <p class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </section>
+        <section class="reasons">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
+          <ul class="reasons__list">
+            <li class="reasons__item">
+              <h3 class="reasons__item-title">Небольшая площадь</h3>
+              <span class="reasons__item-number">— №3 —</span>
+              <p class="reasons__item-text">Все достопримечательности<br> находятся очень близко</p>
+            </li>
+            <li class="reasons__item">
+              <h3 class="reasons__item-title">Красивая дорога</h3>
+              <span class="reasons__item-number">— №4 —</span>
+              <p class="reasons__item-text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+            </li>
+            <li class="reasons__item">
+              <h3 class="reasons__item-title">Мало туристов</h3>
+              <span class="reasons__item-number">— №5 —</span>
+              <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
+        <section class="search">
+          <div class="search__info">
+            <h2 class="search__title">Заинтересовались?</h2>
+            <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          </div>
+          <div class="search__form-wrapper">
+            <button class="search__open-btn  btn  btn--large  btn--action" type="button" name="search-open">Поиск гостиницы в Седоне</button>
+            <form class="search-form" action="hotel-seach" method="get">
+              <div class="search-form__row">
+                <label class="search-form__label" for="check-in">Дата заезда</label>
+                <div class="search-form__input-wrapper  search-form__input-wrapper--calendar">
+                  <input class="search-form__input" type="text" placeholder="24 апреля 2017" id="check-in" name="check-in">
+                  <button class="search-form__calendar-btn" type="button" name="calendar">
+                    <svg class="search-form__calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/><path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="search-form__row">
+                <label class="search-form__label" for="check-out">Дата выезда</label>
+                <div class="search-form__input-wrapper  search-form__input-wrapper--calendar">
+                  <input class="search-form__input" type="text" placeholder="4 июля 2017" id="check-out" name="check-out">
+                  <button class="search-form__calendar-btn" type="button" name="calendar">
+                    <svg class="search-form__calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/><path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="search-form__row  search-form__row--columns">
+                <div class="search-form__column  search-form__column--1">
+                  <label class="search-form__label" for="adults">Взрослые</label>
+                  <div class="search-form__input-wrapper  search-form__input-wrapper--counter">
+                    <button class="search-form__input-control  search-form__input-control--minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                    <input class="search-form__input" type="text" value="2" id="adults" name="adults">
+                    <button class="search-form__input-control  search-form__input-control--plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                  </div>
+                </div>
+                <div class="search-form__column  search-form__column--2">
+                  <label class="search-form__label" for="kids">Дети</label>
+                  <div class="search-form__input-wrapper  search-form__input-wrapper--counter">
+                    <button class="search-form__input-control  search-form__input-control--minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                    <input class="search-form__input" type="text" value="0" id="kids" name="kids">
+                    <button class="search-form__input-control  search-form__input-control--plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                  </div>
+                </div>
+              </div>
+              <button class="search-form__submit  btn  btn--medium" type="submit" name="search-submit">Найти</button>
+            </form>
+          </div>
+        </section>
+        <section class="map">
+          <h2 class="visually-hidden">Расположение Седоны на карте</h2>
+          <img class="map__img" src="img/map.png" width="1200" height="593" alt="Седона на карте">
+          <div class="map__content"><span class="visually-hidden">Седона на интерактивной карте</span></div>
+        </section>
       </main>
-      <section class="about">
-        <div class="about__info">
-          <h1 class="about__title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h1>
-          <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-      </section>
-      <section class="reason  reason--first">
-        <div class="reason__info">
-          <h2 class="reason__title">Настоящий городок</h2>
-          <span class="reason__number">— №1 —</span>
-          <p class="reason__text">Седона — не аттракцион для туристов, там&nbsp;течет своя жизнь</p>
-        </div>
-        <div class="reason__img  reason__img--first">
-          <img src="img/sedona-photo1.jpg" width="800" height="401" alt="Седона">
-        </div>
-      </section>
-      <section class="features">
-        <h2 class="visually-hidden">Особенности Седоны</h2>
-        <ul class="features__list">
-          <li class="features__item  features__item--house">
-            <h3 class="features__item-title">Жилье</h3>
-            <p class="features__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="features__item  features__item--food">
-            <h3 class="features__item-title">Еда</h3>
-            <p class="features__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="features__item  features__item--souvenirs">
-            <h3 class="features__item-title">Сувениры</h3>
-            <p class="features__item-text">Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-      </section>
-      <section class="reason  reason--second">
-        <div class="reason__img  reason__img--second">
-          <img src="img/sedona-photo2.jpg" width="800" height="400" alt="Седона">
-        </div>
-        <div class="reason__info">
-          <h2 class="reason__title">Там есть Мост&nbsp;дьявола</h2>
-          <span class="reason__number">— №2 —</span>
-          <p class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-      </section>
-      <section class="reasons">
-        <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <ul class="reasons__list">
-          <li class="reasons__item">
-            <h3 class="reasons__item-title">Небольшая площадь</h3>
-            <span class="reasons__item-number">— №3 —</span>
-            <p class="reasons__item-text">Все достопримечательности<br> находятся очень близко</p>
-          </li>
-          <li class="reasons__item">
-            <h3 class="reasons__item-title">Красивая дорога</h3>
-            <span class="reasons__item-number">— №4 —</span>
-            <p class="reasons__item-text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
-          </li>
-          <li class="reasons__item">
-            <h3 class="reasons__item-title">Мало туристов</h3>
-            <span class="reasons__item-number">— №5 —</span>
-            <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section class="search">
-        <div class="search__info">
-          <h2 class="search__title">Заинтересовались?</h2>
-          <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </div>
-        <div class="search__form-wrapper">
-          <button class="search__open-btn  btn  btn--large  btn--action" type="button" name="search-open">Поиск гостиницы в Седоне</button>
-          <form class="search-form" action="hotel-seach" method="get">
-            <div class="search-form__row">
-              <label class="search-form__label" for="check-in">Дата заезда</label>
-              <div class="search-form__input-wrapper  search-form__input-wrapper--calendar">
-                <input class="search-form__input" type="text" placeholder="24 апреля 2017" id="check-in" name="check-in">
-                <button class="search-form__calendar-btn" type="button" name="calendar">
-                  <svg class="search-form__calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/><path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/></svg>
-                </button>
-              </div>
-            </div>
-            <div class="search-form__row">
-              <label class="search-form__label" for="check-out">Дата выезда</label>
-              <div class="search-form__input-wrapper  search-form__input-wrapper--calendar">
-                <input class="search-form__input" type="text" placeholder="4 июля 2017" id="check-out" name="check-out">
-                <button class="search-form__calendar-btn" type="button" name="calendar">
-                  <svg class="search-form__calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/><path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/></svg>
-                </button>
-              </div>
-            </div>
-            <div class="search-form__row  search-form__row--columns">
-              <div class="search-form__column  search-form__column--1">
-                <label class="search-form__label" for="adults">Взрослые</label>
-                <div class="search-form__input-wrapper  search-form__input-wrapper--counter">
-                  <button class="search-form__input-control  search-form__input-control--minus" type="button"><span class="visually-hidden">Увеличить</span></button>
-                  <input class="search-form__input" type="text" value="2" id="adults" name="adults">
-                  <button class="search-form__input-control  search-form__input-control--plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
-                </div>
-              </div>
-              <div class="search-form__column  search-form__column--2">
-                <label class="search-form__label" for="kids">Дети</label>
-                <div class="search-form__input-wrapper  search-form__input-wrapper--counter">
-                  <button class="search-form__input-control  search-form__input-control--minus" type="button"><span class="visually-hidden">Увеличить</span></button>
-                  <input class="search-form__input" type="text" value="0" id="kids" name="kids">
-                  <button class="search-form__input-control  search-form__input-control--plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
-                </div>
-              </div>
-            </div>
-            <button class="search-form__submit  btn  btn--medium" type="submit" name="search-submit">Найти</button>
-          </form>
-        </div>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Расположение Седоны на карте</h2>
-        <img class="map__img" src="img/map.png" width="1200" height="593" alt="Седона на карте">
-        <div class="map__content"><span class="visually-hidden">Седона на интерактивной карте</span></div>
-      </section>
       <footer class="page-footer  page-footer--index">
         <div class="page-footer__more-info">
           <a class="hashtag" href="#">#visitSedona</a>

@@ -648,7 +648,7 @@ img {
   height: 593px;
 }
 
-.map + .page-footer--index {
+.page-footer--index {
   position: absolute;
   left: 0;
   right: 0;
