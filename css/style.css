@@ -318,20 +318,13 @@ img {
   margin: 21px 0 0;
 }
 
-.search {
-  overflow: hidden;
-}
-
 .search__info {
-  position: relative;
   padding-top: 50px;
   padding-bottom: 47px;
-  max-width: 588px;
+  max-width: 460px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #fff;
-  z-index: 2;
 }
 
 .search__title {
@@ -395,6 +388,10 @@ img {
   padding: 16px 48px;
 }
 
+.search__map-wrapper {
+  overflow: hidden;
+}
+
 .search__form-wrapper {
   position: relative;
   width: 568px;
@@ -426,34 +423,72 @@ img {
 }
 
 .search-form--hide {
-  animation: formhide 0.7s forwards;
+  -webkit-animation: formhide 0.7s forwards;
+          animation: formhide 0.7s forwards;
 }
 
 .search-form--show {
-  animation: formshow 0.7s forwards;
+  -webkit-animation: formshow 0.7s forwards;
+          animation: formshow 0.7s forwards;
 }
 
-@keyframes formshow {
+@-webkit-keyframes formshow {
   0% {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
     opacity: 0;
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes formshow {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes formhide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
 }
 
 @keyframes formhide {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   100% {
-    transform: translateY(-100%);
-    box-shadow: none;
-    transform-origin: top;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
 }
 
@@ -689,7 +724,9 @@ img {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-600px);
+  -webkit-transform: translateX(-600px);
+      -ms-transform: translateX(-600px);
+          transform: translateX(-600px);
   display: block;
   width: 1200px;
   max-width: inherit;
