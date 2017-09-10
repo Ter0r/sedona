@@ -20,7 +20,7 @@ if (mapElement) {
   google.maps.event.addDomListener(window, "resize", m_res );
   function init() {
       var mapOptions = {
-        zoom: 10,
+        zoom: 9,
         mapTypeControl: false,
         zoomControl: true,
         scrollwheel: false,
