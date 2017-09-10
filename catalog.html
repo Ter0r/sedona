@@ -35,7 +35,7 @@
           <h1 class="visually-hidden">Поиск отелей в Седоне</h1>
           <form class="filters" action="catalog.html" method="get">
             <div class="filters__layout">
-              <div class="filters__filters">
+              <div class="filters__options">
                 <fieldset class="filters__fieldset">
                   <legend class="filters__legend">Инфраструктура:</legend>
                   <ul class="filters__list">
@@ -54,7 +54,7 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="filters">
+              <div class="filters__options">
                 <fieldset class="filters__fieldset">
                   <legend class="filters__legend">Тип жилья:</legend>
                   <ul class="filters__list">
@@ -75,7 +75,7 @@
               </div>
               <div class="filters__price">
                 <fieldset class="filters__price-fieldset">
-                  <legend class="filters__price-legend">Стоимость в сутки p.</legend>
+                  <legend class="filters__price-legend">Стоимость в сутки (p):</legend>
                   <div class="filters__price-inputs">
                     <label class="filters__price-label  search__price-label--min">
                       От <input class="filters__price-input  search__price-input--min" type="text" name="min-price-input" value="0">
@@ -102,7 +102,7 @@
           <section class="hotels__filters">
             <div class="hotels__filters-title">
               <h3 class="visually-hidden">Сортировка результатов</h3>
-              <div class="hotels__filters-result">Найдено: <span class="hotels__filters-result-count" id="hotels-count">3</span></div>
+              <div class="hotels__filters-result-title">Найдено: <span class="hotels__filters-result-count" id="hotels-count">3</span></div>
             </div>
             <div class="hotels__sort">
               <ul class="hotels__sort-list">
@@ -139,15 +139,22 @@
               </div>
               <div class="hotels__item-desc">
                 <a  class="hotels__item-name" href="#">Amara Resort &amp; Spa</a>
-                <span class="hotels__item-stars">4*</span>
                 <div class="hotels__item-info">
                   <div class="hotels__item-type">Гостиница</div>
                   <div class="hotels__item-price">от 4000 p.</div>
+                </div>
+                <div class="hotels__item-links">
                   <a class="hotels__more-info  btn" href="#">Подробнее</a>
                   <a class="hotels__item-book  btn  btn--action" href="#">Забронировать</a>
                 </div>
               </div>
               <div class="hotels__item-rating">
+                <span class="hotels__item-stars" aria-label="4*">
+                  <span class="star">*</span>
+                  <span class="star">*</span>
+                  <span class="star">*</span>
+                  <span class="star">*</span>
+                </span>
                 <span class="rating">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -157,15 +164,21 @@
               </div>
               <div class="hotels__item-desc">
                 <a  class="hotels__item-name" href="#">Desert Quail Inn</a>
-                <span class="hotels__item-stars">3*</span>
                 <div class="hotels__item-info">
                   <div class="hotels__item-type">Мотель</div>
                   <div class="hotels__item-price">от 3000 p.</div>
+                </div>
+                <div class="hotels__item-links">
                   <a class="hotels__more-info  btn" href="#">Подробнее</a>
                   <a class="hotels__item-book  btn  btn--action" href="#">Забронировать</a>
                 </div>
               </div>
               <div class="hotels__item-rating">
+                <span class="hotels__item-stars" aria-label="3*">
+                  <span class="star">*</span>
+                  <span class="star">*</span>
+                  <span class="star">*</span>
+                </span>
                 <span class="rating">Рейтинг: 8,9</span>
               </div>
             </li>
@@ -175,15 +188,20 @@
               </div>
               <div class="hotels__item-desc">
                 <a  class="hotels__item-name" href="#">Villas at Poco Diablo</a>
-                <span class="hotels__item-stars">4*</span>
                 <div class="hotels__item-info">
                   <div class="hotels__item-type">Апартаменты</div>
                   <div class="hotels__item-price">от 2000 p.</div>
+                </div>
+                <div class="hotels__item-links">
                   <a class="hotels__more-info  btn" href="#">Подробнее</a>
                   <a class="hotels__item-book  btn  btn--action" href="#">Забронировать</a>
                 </div>
               </div>
               <div class="hotels__item-rating">
+                <span class="hotels__item-stars" aria-label="2*">
+                  <span class="star">*</span>
+                  <span class="star">*</span>
+                </span>
                 <span class="rating">Рейтинг: 9,2</span>
               </div>
             </li>
