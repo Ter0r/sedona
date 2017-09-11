@@ -764,18 +764,20 @@ img {
 }
 
 .filters__price-fieldset {
-  padding-left: 10px;
+  padding-left: 3.33%;
 }
 
 .filters__options {
   padding-left: 6%;
   width: 21.19%;
+  min-width: 240px;
 }
 
 .filters__price {
-  width: 27.3333333333%;
-  margin-right: 6%;
+  padding-right: 6%;
+  width: 33.4166666667%;
   margin-left: auto;
+  min-width: 276px;
 }
 
 .filters__legend {
@@ -893,7 +895,7 @@ img {
   margin: 0;
   border: 0;
   color: #fff;
-  width: 32px;
+  width: 30px;
 }
 
 .filters__price-input--min {
