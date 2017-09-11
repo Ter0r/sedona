@@ -7,7 +7,7 @@ if (searchOpen) {
     searchForm.classList.add("search-form--hide");
   };
 
-  searchOpen.addEventListener("click", function (evt) {
+  searchOpen.addEventListener("click", function (event) {
     event.preventDefault();
     searchForm.classList.toggle("search-form--hide");
     searchForm.classList.toggle("search-form--show");
