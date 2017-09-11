@@ -40,16 +40,16 @@
                   <legend class="filters__legend">Инфраструктура:</legend>
                   <ul class="filters__list">
                     <li class="filters__item">
-                      <input type="checkbox" name="pool" id="pool" checked>
-                      <label for="pool">Бассейн</label>
+                      <input class="filters__checkbox" type="checkbox" name="pool" id="pool" checked>
+                      <label class="filters__checkbox-label" for="pool">Бассейн</label>
                     </li>
                     <li class="filters__item">
-                      <input type="checkbox" name="parking" id="parking">
-                      <label for="parking">Парковка</label>
+                      <input class="filters__checkbox" type="checkbox" name="parking" id="parking">
+                      <label class="filters__checkbox-label" for="parking">Парковка</label>
                     </li>
                     <li class="filters__item">
-                      <input type="checkbox" name="wi-fi" id="wi-fi">
-                      <label for="wi-fi">WI-FI</label>
+                      <input class="filters__checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                      <label class="filters__checkbox-label" for="wi-fi">WI-FI</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -59,16 +59,16 @@
                   <legend class="filters__legend">Тип жилья:</legend>
                   <ul class="filters__list">
                     <li class="filters__item">
-                      <input type="checkbox" name="hotel" id="hotel" checked>
-                      <label for="hotel">Гостиница</label>
+                      <input class="filters__checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                      <label class="filters__checkbox-label" for="hotel">Гостиница</label>
                     </li>
                     <li class="filters__item">
-                      <input type="checkbox" name="motel" id="motel" checked>
-                        <label for="motel">Мотель</label>
+                      <input class="filters__checkbox" type="checkbox" name="motel" id="motel" checked>
+                        <label class="filters__checkbox-label" for="motel">Мотель</label>
                     </li>
                     <li class="filters__item">
-                      <input type="checkbox" name="apartments" id="apartments" checked>
-                      <label for="apartments">Апартаменты</label>
+                      <input class="filters__checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                      <label class="filters__checkbox-label" for="apartments">Апартаменты</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -77,22 +77,22 @@
                 <fieldset class="filters__price-fieldset">
                   <legend class="filters__price-legend">Стоимость в сутки (p):</legend>
                   <div class="filters__price-inputs">
-                    <label class="filters__price-label  search__price-label--min">
-                      От <input class="filters__price-input  search__price-input--min" type="text" name="min-price-input" value="0">
+                    <label class="filters__price-label  filters__price-label--min">
+                      От <input class="filters__price-input  filters__price-input--min" type="text" name="min-price-input" value="0">
                     </label>
-                    <label class="filters__price-label  search__price-label--max">
-                      До <input class="filters__price-input  search__price-input--max" type="text" name="max-price-input" value="3000">
+                    <label class="filters__price-label  filters__price-label--max">
+                      До <input class="filters__price-input  filters__price-input--max" type="text" name="max-price-input" value="3000">
                     </label>
                   </div>
                   <div class="filters__price-range">
-                    <div class="filters__price-scale"></div>
-                    <span class="filters__price-control  search__price-control--min">Минимум</span>
-                    <span class="filters__price-control  search__price-control--max">Максимум</span>
-                  </div>
-                  <div class="filters__apply">
-                    <button class="filters__show  filter-btn" type="submit" name="search-show">Показать</button>
+                    <div class="filters__price-scale"><div class="filters__price-scale-value"></div></div>
+                    <span class="filters__price-control  filters__price-control--min">Минимум</span>
+                    <span class="filters__price-control  filters__price-control--max">Максимум</span>
                   </div>
                 </fieldset>
+                <div class="filters__apply">
+                  <button class="filters__show  filter-btn" type="submit" name="search-show">Показать</button>
+                </div>
               </div>
             </div>
           </form>

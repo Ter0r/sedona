@@ -26,7 +26,8 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+.filters__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -57,13 +58,16 @@ img {
   left: 0;
   width: 100%;
   height: auto;
-  transform: translateY(-28.5%);
-  z-index: 0;
+  -webkit-transform: translateY(-28.5%);
+      -ms-transform: translateY(-28.5%);
+          transform: translateY(-28.5%);
+  z-index: 1;
 }
 
 .page-header {
   position: relative;
   background-color: #fff;
+  z-index: 1;
 }
 
 .logo {
@@ -132,6 +136,7 @@ img {
   min-height: 508px;
   padding-top: 76px;
   padding-bottom: 80px;
+  background-color: #e3edf6;
   overflow: hidden;
 }
 
@@ -145,6 +150,7 @@ img {
   height: 58px;
   background:  url(../img/showcase-shape.png) no-repeat center bottom;
   background-size: 100% auto;
+  z-index: 1;
 }
 
 .showcase__img {
@@ -162,6 +168,7 @@ img {
   padding: 61px 6% 53px;
   text-align: center;
   background-color: #fff;
+  z-index: 1;
 }
 
 .about__info {
@@ -733,7 +740,7 @@ img {
 }
 
 .hotels-search {
-  background: #83accb url(../img/form-bg.jpg) no-repeat top center;
+  background: #83accb url(../img/form-bg.jpg) no-repeat center;
   background-size: 100% auto;
   padding: 27px 0 31px;
   min-height: 217px;
@@ -741,7 +748,13 @@ img {
 }
 
 .filters__layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .filters__fieldset,
@@ -751,26 +764,125 @@ img {
   margin: 0;
 }
 
+.filters__price-fieldset {
+  padding-left: 10px;
+}
+
 .filters__options {
   padding-left: 6%;
+  width: 21.19%;
 }
 
 .filters__price {
-  padding-right: 6%;
+  width: 27.3333333333%;
+  margin-right: 6%;
   margin-left: auto;
 }
 
-.filters__legend,
+.filters__legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+
 .filters__price-legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.filter-btn {
+  padding: 5.5px 34px;
+  font: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+  text-transform: inherit;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #000;
+  background-color: #fff;
 }
 
 .filters__list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.filters__checkbox-label {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 40px;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.filters__checkbox-label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background: url(../img/checkbox-off.svg) no-repeat top left;
+  background-size: 23px 23px;
+}
+
+.filters__checkbox:checked ~ .filters__checkbox-label::before {
+  background-image: url(../img/checkbox-on.svg);
+  background-size: 27px 23px;
+  width: 27px;
+  height: 23px;
+}
+
+.filters__checkbox:focus ~ .filters__checkbox-label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filters__checkbox:disabled ~ .filters__checkbox-label {
+  color: #6a6a6a;
+}
+
+.filters__checkbox:disabled ~ .filters__checkbox-label::before {
+  background-image: url(../img/checkbox-off-disabled.svg);
+}
+
+.filters__checkbox:checked:disabled ~ .filters__checkbox-label::before {
+  background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.filters__item + .filters__item {
+  margin-top: 23px;
+}
+
+.filters__price-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 5.5px;
+  padding-bottom: 5.5px;
+  border: 2px solid #fff;
+  border-radius: 2px;
 }
 
 .filters__price-input {
@@ -782,13 +894,93 @@ img {
   margin: 0;
   border: 0;
   color: #fff;
-  width: 35px;
+  width: 32px;
+}
+
+.filters__price-input--min {
+  width: 10px;
+}
+
+.filters__price-label {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.filters__price-label:nth-child(2):before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: 0;
+  width: 2px;
+  height: 22px;
+  background-color: #fff;
+}
+
+.filters__price-range {
+  position: relative;
+  padding: 20px 0;
+}
+
+.filters__price-scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.filters__price-scale-value {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.filters__price-control {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 8px solid #fff;
+  background-color: #ababab;
+  border-radius: 50%;
+  text-indent: -1000px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
+          box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
+  cursor: pointer;
+}
+
+.filters__price-control:hover {
+  left: -1px;
+  width: 22px;
+  height: 22px;
+  border-width: 9px;
+}
+
+.filters__price-control--max {
+  margin-left: 80%;
+}
+
+.filters__apply {
+  margin-top: 12px;
+  text-align: center;
 }
 
 .hotels__filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 29px 6% 31px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -807,6 +999,8 @@ img {
 }
 
 .hotels__sort-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -849,6 +1043,8 @@ img {
 }
 
 .hotels__stars-sort-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -903,8 +1099,13 @@ img {
 }
 
 .hotels__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 25px 6% 30px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -921,8 +1122,13 @@ img {
 }
 
 .hotels__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 7px;
 }
 
@@ -932,8 +1138,13 @@ img {
 }
 
 .hotels__item-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 14px;
 }
 
@@ -959,18 +1170,32 @@ img {
 }
 
 .hotels__item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: auto;
 }
 
 .hotels__item-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 4px;
   width: 114px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .star {
@@ -992,7 +1217,8 @@ img {
   padding: 3px 14px 3px;
   min-width: 110px;
   background-color: #f2f2f2;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .map {
