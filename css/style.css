@@ -50,6 +50,22 @@ img {
           box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
+.showcase-bg {
+  position: absolute;
+  display: block;
+  top: 201px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-28.5%);
+  z-index: 0;
+}
+
+.page-header {
+  position: relative;
+  background-color: #fff;
+}
+
 .logo {
   position: absolute;
   top: 0;
@@ -116,8 +132,7 @@ img {
   min-height: 508px;
   padding-top: 76px;
   padding-bottom: 80px;
-  background: #deebf4 url(../img/showcase-bg.jpg) no-repeat center -83px;
-  background-size: 100% auto;
+  overflow: hidden;
 }
 
 .showcase::after {
@@ -133,16 +148,20 @@ img {
 }
 
 .showcase__img {
+  position: relative;
   display: block;
   width: 458px;
   height: 352px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
 }
 
 .about {
+  position: relative;
   padding: 61px 6% 53px;
   text-align: center;
+  background-color: #fff;
 }
 
 .about__info {
@@ -163,6 +182,7 @@ img {
 }
 
 .reason {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
