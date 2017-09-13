@@ -756,15 +756,16 @@ img {
           flex-direction: row;
 }
 
-.filters__fieldset,
-.filters__price-fieldset {
+.filters__fieldset {
   border: 0;
   padding: 0;
   margin: 0;
 }
 
 .filters__price-fieldset {
-  padding-left: 3.33%;
+  padding: 0 0 0 3.33%;
+  margin: 0;
+  border: 0;
 }
 
 .filters__options {
@@ -971,7 +972,7 @@ img {
   text-align: center;
 }
 
-.hotels__filters {
+.hotels__sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -986,7 +987,7 @@ img {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.hotels__filters-result-title {
+.hotels__sort-result-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -995,7 +996,7 @@ img {
   margin-right: 30px;
 }
 
-.hotels__sort {
+.hotels__sort-types {
   margin-top: 5px;
 }
 
@@ -1033,17 +1034,21 @@ img {
   border-color: transparent;
 }
 
+.hotels__sort-list-title {
+  margin-right: 38px;
+}
+
 .hotels__sort-item + .hotels__sort-item {
   margin-left: 34px;
 }
 
-.hotels__stars-sort {
+.hotels__updown-sort {
   margin-top: 3px;
   margin-right: 1px;
   margin-left: auto;
 }
 
-.hotels__stars-sort-list {
+.hotels__updown-sort-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,11 +1057,11 @@ img {
   list-style: none;
 }
 
-.hotels__stars-sort-item + .hotels__stars-sort-item {
+.hotels__updown-sort-item + .hotels__updown-sort-item {
   margin-left: 12px;
 }
 
-.hotels__stars-sort-link {
+.hotels__updown-sort-link {
   display: block;
   width: 11px;
   height: 10px;
@@ -1067,27 +1072,27 @@ img {
   overflow: hidden;
 }
 
-.hotels__stars-sort-link:hover,
-.hotels__stars-sort-link:focus {
+.hotels__updown-sort-link:hover,
+.hotels__updown-sort-link:focus {
   border-color: #000;
 }
 
-.hotels__stars-sort-link:active {
+.hotels__updown-sort-link:active {
   border-color: #81b3d2;
 }
 
-.hotels__stars-sort-link--active {
+.hotels__updown-sort-link--active {
   border-color: #81b3d2;
   pointer-events: none;
 }
 
-.hotels__stars-sort-link.hotels__stars-sort-link--up {
+.hotels__updown-sort-link.hotels__updown-sort-link--up {
   border-top: none;
   border-left-color: transparent;
   border-right-color: transparent;
 }
 
-.hotels__stars-sort-link.hotels__stars-sort-link--down {
+.hotels__updown-sort-link.hotels__updown-sort-link--down {
   border-bottom: none;
   border-left-color: transparent;
   border-right-color: transparent;
