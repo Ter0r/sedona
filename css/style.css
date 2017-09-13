@@ -1413,7 +1413,7 @@ img {
 }
 
 .developer__logo:hover,
-.developer__logo:focus {
+.developer__logo-link:focus .developer__logo {
   fill: #81b3d2;
 }
 
